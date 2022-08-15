@@ -1,0 +1,15 @@
+.container2{
+    display: flex;
+    justify-content: center;
+}
+.box{
+    margin: 2rem 2rem;
+}
+.boxfoot{
+    display: flex;
+    justify-content: center;
+  
+}
+.container{
+    margin-bottom: 5.5rem!important;
+}

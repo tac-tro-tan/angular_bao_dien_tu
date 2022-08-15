@@ -1,0 +1,71 @@
+<div class="container">
+    <form action="" novalidate [formGroup]="form">
+
+        <nav class="navbar navbar-light bg-white">
+            <div class="container-fluid">
+                <a class="navbar-brand">
+                    <strong>Chi tiết tin bài</strong>
+                </a>
+                <div class="d-flex">
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal" (click)="DeleteCM(tinbaiByID.id)">
+                        Xóa
+                    </button>
+
+
+                    <span style="margin:0 1rem"> </span>
+                    <button class="btn btn-outline-success" type="submit"
+                        routerLink="/article/change/{{tinbaiByID.id}}">Chỉnh sửa</button>
+                </div>
+            </div>
+        </nav>
+
+        <fieldset disabled>
+
+            <div class="row">
+                <div class="box col">
+                    <label for="exampleFormControlInput1" class="form-label">Tiêu đề<span
+                            style="color:red">*</span></label>
+                    <input type="text" class="form-control"  formControlName="tieuDe"
+                        [(ngModel)]="tinbaiByID.tieuDe">
+                    <span class="text-danger" *ngIf="(FormControl['tieuDe'].touched || submitted)
+                    && FormControl['tieuDe'].errors?.['required']">
+                        This field must required
+                    </span>
+                </div>
+                
+                <div class="box col">
+                    <label for="exampleFormControlInput1" class="form-label">Chuyên mục<span
+                            style="color:red">*</span></label>
+                    <ng-multiselect-dropdown formControlName="chuyenMuc" [placeholder]="'custom placeholder'"
+                        [settings]="dropdownSettings" [data]="dropdownList" [(ngModel)]="selectedItems"
+                        (onSelect)="onItemSelect($event)" (onSelectAll)="onSelectAll($event)">
+                    </ng-multiselect-dropdown>
+                </div>
+    
+                <div class="box col">
+                    <div>
+                        <label for="exampleFormControlInput1" class="form-label">URL ảnh thumbnail <span
+                                style="color:red">*</span></label>
+                        <input type="text" class="form-control"  formControlName="anh"
+                            [(ngModel)]="tinbaiByID.anh">
+                        <span class="text-danger" *ngIf="(FormControl['anh'].touched || submitted)
+                    && FormControl['anh'].errors?.['required']">
+                            This field must required
+                        </span>
+                    </div>
+                    <div>
+                        <img src="{{this.FormControl['anh'].value}}" alt="Đường dẫn ảnh" class="img2">
+                    </div>
+                </div>
+            </div>
+            <div class="box row">
+                <label for="exampleFormControlTextarea1" class="form-label">Mô tả</label>
+                <textarea class="form-control" rows="9" formControlName="noiDung"
+                    [(ngModel)]="tinbaiByID.noiDung"></textarea>
+            </div>
+        </fieldset>
+    </form>
+</div>

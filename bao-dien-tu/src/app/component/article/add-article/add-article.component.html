@@ -1,0 +1,62 @@
+<div class="container">
+    <form action="" [formGroup]="form" (ngSubmit)="createCM()">
+
+        <nav class="navbar navbar-light bg-white">
+            <div class="container-fluid">
+                <a class="navbar-brand">
+                    <strong>Thêm tin bài</strong>
+                </a>
+                <div class="d-flex">
+
+                    <button class="btn btn-outline-danger" type="submit" routerLink="/article">Hủy</button>
+                    <span style="margin:0 1rem"> </span>
+                    <button class="btn btn-outline-success" type="submit">Lưu</button>
+                </div>
+            </div>
+        </nav>
+
+        <div class="row">
+
+            <div class="box col">
+                <label for="exampleFormControlInput1" class="form-label">Tiêu đề <span
+                        style="color:red">*</span></label>
+                <input type="text" class="form-control"  formControlName="tieuDe">
+                <span class="text-danger" *ngIf="(FormControl['tieuDe'].touched || submitted)
+                && FormControl['tieuDe'].errors?.['required']">
+                    This field must required
+                </span>
+            </div>
+            <div class="box col">
+                <label for="exampleFormControlInput1" class="form-label">Chuyên mục<span
+                        style="color:red">*</span></label>
+                <ng-multiselect-dropdown formControlName="chuyenMuc" [placeholder]="'custom placeholder'"
+                    [settings]="dropdownSettings" [data]="dropdownList"
+                    (onSelect)="onItemSelect($event)" (onSelectAll)="onSelectAll($event)">
+                </ng-multiselect-dropdown>
+            </div>
+            <div class="box col">
+                <div>
+                    <label for="exampleFormControlInput1" class="form-label">URL ảnh thumbnail <span
+                            style="color:red">*</span></label>
+                    <input type="text" class="form-control" id="?" formControlName="anh">
+                    <span class="text-danger" *ngIf="(FormControl['anh'].touched || submitted)
+                && FormControl['anh'].errors?.['required']">
+                        This field must required
+                    </span>
+                </div>
+                <div>
+                    <img src="{{this.FormControl['anh'].value}}" alt="Đường dẫn ảnh" class="img2">
+                </div>
+            </div>
+
+        </div>
+        <div class="box row">
+            <label for="exampleFormControlTextarea1" class="form-label">Nội dung tin bài<span
+                    style="color:red">*</span></label>
+            <textarea class="form-control" rows="9" formControlName="noiDung"></textarea>
+        </div>
+    </form>
+
+
+
+</div>

@@ -1,0 +1,97 @@
+<div class="container d-flex">
+    <div>
+        <div class="mb-5 mt-5" style="width: 750px;">
+            <div>
+                <h2> <strong>{{conten.tieuDe}}</strong> </h2>
+            </div>
+
+            <div class="product-image" style="width: 100%;text-align: center;">
+                <img src={{conten.anh}} alt="" width="400px" height="400px" style="margin-left: 200px;">
+                <div class="info2">
+                    <ul>
+                        <li>
+                            <a routerLink="/authorpost" (click)="authorPost(conten.nguoiDang)">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                                <strong>&ensp;Người đăng:</strong>
+                                {{conten.nguoiDang}}
+                            </a>
+                        </li>
+
+                        <li><i class="fa fa-calendar" aria-hidden="true"></i>
+                            <strong>&ensp;Ngày đăng: </strong>{{conten.ngayDang}}
+                        </li>
+                        <li><i class="fa fa-eye" aria-hidden="true"></i>
+                            <strong>&ensp;Lượt xem:</strong> {{conten.luotXem}}
+                        </li>
+                        <li><i class="fa fa-tags" aria-hidden="true"></i>
+                            <strong>&ensp;Chuyên mục: </strong>
+                            <a (click)="postByCategory(i.tenChuyenMuc)" href="{{i.tenChuyenMuc}}"
+                                *ngFor="let i of conten.chuyenMuc" routerLink="/postsbycategory">
+                                {{i.tenChuyenMuc}}
+                                <br>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="mb-5 mt-5" style="width: 700px;"> 
+            <p style="word-wrap:break-word">{{conten.noiDung}}</p>  
+            
+        </div>
+    </div>
+    <div class="mb-5 mt-5 ml-5">
+        <div>
+            <div>
+                <h2><strong>Bài viết phổ biến nhất</strong></h2>
+            </div>
+            <div class="container1" style="width: 300px; height: 150px;" *ngFor="let item of eyesPosts">
+
+                <a routerLink="/content">
+                    <div class="product-image" style="width: 100%;text-align: center;">
+                        <div class="product-details" style="padding: 0px;width:60%;display: inline-block;">
+                            <h2>{{item.tieuDe}}</h2>
+                        </div>
+
+                        <div class="info2">
+                            <ul>
+                                <li>
+                                    <a routerLink="/authorpost" (click)="authorPost(item.nguoiDang)">
+                                        <i class="fa fa-user" aria-hidden="true"></i>
+                                        <strong>&ensp;Người đăng:</strong>
+                                        {{item.nguoiDang}}
+                                    </a>
+                                </li>
+
+                                <li><i class="fa fa-eye" aria-hidden="true"></i>
+                                    <strong>&ensp;Lượt xem:</strong>{{item.luotXem}}
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+        <div>
+            <div>
+                <h2><strong>Chuyên đề</strong></h2>
+            </div>
+            <div class="card mb-3 container1" style="width: 300px;">
+                <div class="">
+                    <div class="col">
+                        <div class="card-body">
+                            <p class="card-text2" *ngFor="let item of category">
+                                <a href="#">{{item}}</a>
+                                <br />
+                                <br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

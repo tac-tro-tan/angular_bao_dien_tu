@@ -1,0 +1,311 @@
+{
+  "Users": [
+    {
+      "username": "johny44",
+      "email": "johny50@gmail.com",
+      "password": "johny44QWE!@#1",
+      "id": "3"
+    },
+    {
+      "username": "johny22",
+      "email": "johny22@gmail.com",
+      "password": "johny44QWE!@#",
+      "id": "4"
+    },
+    {
+      "username": "johny23",
+      "email": "johny22@gmail.com",
+      "password": "johny44QWE!@#",
+      "id": "5"
+    },
+    {
+      "username": "johny24",
+      "email": "johny22@gmail.com",
+      "password": "johny44QWE!@#",
+      "id": "6"
+    }
+  ],
+  "posts": [
+    {
+      "id": "1",
+      "tieuDe": "Structural Analysis Engineer",
+      "nguoiDang": "Dell Hammelberg",
+      "ngayDang": "6/10/2022",
+      "luotXem": 800,
+      "chuyenMuc": [
+        {
+          "id": "1",
+          "tenChuyenMuc": "Sub-Ex",
+          "maChuyenMuc": "55-165-6071"
+        },
+        {
+          "id": "3",
+          "tenChuyenMuc": "Toughjoyfax",
+          "maChuyenMuc": "91-496-6933"
+        }
+      ],
+      "noiDung": "wwwwwqeqqeqewqeqweqewqewwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww",
+      "anh": "https://images.unsplash.com/photo-1606830733744-0ad778449672?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzl8fGNocmlzdG1hcyUyMHRyZWV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+      "id": "3",
+      "tieuDe": "Senior Sales Associate",
+      "nguoiDang": "Dell Hammelberg",
+      "ngayDang": "31/7/2022",
+      "luotXem": 288,
+      "chuyenMuc": [
+        {
+          "id": "1",
+          "tenChuyenMuc": "Sub-Ex",
+          "maChuyenMuc": "55-165-6071"
+        },
+        {
+          "id": "3",
+          "tenChuyenMuc": "Toughjoyfax",
+          "maChuyenMuc": "91-496-6933",
+          "ngayKhoiTao": "2021-11-23",
+          "chuyenMucCha": "",
+          "moTa": "33"
+        }
+      ],
+      "noiDung": "wwwwwqeqqeqewqeqweqewqewwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww",
+      "anh": "https://images.unsplash.com/photo-1606830733744-0ad778449672?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzl8fGNocmlzdG1hcyUyMHRyZWV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+      "id": "4",
+      "tieuDe": "Computer Systems Analyst III",
+      "nguoiDang": "Aldo Grocutt",
+      "ngayDang": "2/1/2022",
+      "luotXem": 374,
+      "chuyenMuc": [
+        {
+          "id": "2",
+          "tenChuyenMuc": "Solarbreeze",
+          "maChuyenMuc": "68-154-9912"
+        }
+      ],
+      "noiDung": "wwwwwqeqqeqewqeqweqewqewwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww",
+      "anh": "https://images.unsplash.com/photo-1606830733744-0ad778449672?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzl8fGNocmlzdG1hcyUyMHRyZWV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+      "id": "5",
+      "tieuDe": "Research Assistant II",
+      "nguoiDang": "Aldo Grocutt",
+      "ngayDang": "8/25/2021",
+      "luotXem": 109,
+      "chuyenMuc": [
+        {
+          "id": "2",
+          "tenChuyenMuc": "Solarbreeze",
+          "maChuyenMuc": "68-154-9912"
+        }
+      ],
+      "noiDung": "wwwwwqeqqeqewqeqweqewqewwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww",
+      "anh": "https://images.unsplash.com/photo-1606830733744-0ad778449672?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzl8fGNocmlzdG1hcyUyMHRyZWV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+      "id": "6",
+      "tieuDe": "Software Engineer II",
+      "nguoiDang": "Aldo Grocutt",
+      "ngayDang": "8/10/2021",
+      "luotXem": 368,
+      "chuyenMuc": [
+        {
+          "id": "2",
+          "tenChuyenMuc": "Solarbreeze",
+          "maChuyenMuc": "68-154-9912"
+        }
+      ],
+      "noiDung": "wwwwwqeqqeqewqeqweqewqewwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww",
+      "anh": "https://images.unsplash.com/photo-1606830733744-0ad778449672?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzl8fGNocmlzdG1hcyUyMHRyZWV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+      "id": "7",
+      "tieuDe": "Associate Professor",
+      "nguoiDang": "Aldo Grocutt",
+      "ngayDang": "3/7/2022",
+      "luotXem": 125,
+      "chuyenMuc": [
+        {
+          "id": "2",
+          "tenChuyenMuc": "Solarbreeze",
+          "maChuyenMuc": "68-154-9912"
+        }
+      ],
+      "noiDung": "wwwwwqeqqeqewqeqweqewqewwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww",
+      "anh": "https://images.unsplash.com/photo-1606830733744-0ad778449672?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzl8fGNocmlzdG1hcyUyMHRyZWV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+      "id": "8",
+      "tieuDe": "Administrative Assistant I",
+      "nguoiDang": "Aldo Grocutt",
+      "ngayDang": "6/8/2022",
+      "luotXem": 661,
+      "chuyenMuc": [
+        {
+          "id": "2",
+          "tenChuyenMuc": "Solarbreeze",
+          "maChuyenMuc": "68-154-9912"
+        },
+        {
+          "id": "5",
+          "tenChuyenMuc": "Home Ing",
+          "maChuyenMuc": "82-702-8538"
+        }
+      ],
+      "noiDung": "wwwwwqeqqeqewqeqweqewqewwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww.wwwwwwwwwwwwwwwwwwwwweeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeerrrrrrrrrrrrrrrrrrrrrrrrrr",
+      "anh": "https://images.unsplash.com/photo-1606830733744-0ad778449672?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzl8fGNocmlzdG1hcyUyMHRyZWV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+      "id": "9",
+      "tieuDe": "VP Product Management",
+      "nguoiDang": "Aldo Grocutt",
+      "ngayDang": "9/3/2021",
+      "luotXem": 828,
+      "chuyenMuc": [
+        {
+          "id": "2",
+          "tenChuyenMuc": "Solarbreeze",
+          "maChuyenMuc": "68-154-9912"
+        },
+        {
+          "id": "5",
+          "tenChuyenMuc": "Home Ing",
+          "maChuyenMuc": "82-702-8538"
+        }
+      ],
+      "noiDung": "wwwwwqeqqeqewqeqweqewqewwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww",
+      "anh": "https://images.unsplash.com/photo-1606830733744-0ad778449672?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzl8fGNocmlzdG1hcyUyMHRyZWV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+      "id": "10",
+      "tieuDe": "Director of Sales",
+      "nguoiDang": "Dell Hammelberg",
+      "ngayDang": "4/5/2022",
+      "luotXem": 933,
+      "chuyenMuc": [
+        {
+          "id": "2",
+          "tenChuyenMuc": "Solarbreeze",
+          "maChuyenMuc": "68-154-9912"
+        },
+        {
+          "id": "4",
+          "tenChuyenMuc": "Flowdesk",
+          "maChuyenMuc": "99-617-4168"
+        }
+      ],
+      "noiDung": "wwwwwqeqqeqewqeqweqewqewwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww",
+      "anh": "https://images.unsplash.com/photo-1606830733744-0ad778449672?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzl8fGNocmlzdG1hcyUyMHRyZWV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+    },
+    {
+      "id": "6cfac2d5-6a45-48ef-8063-84670da7aab9",
+      "tieuDe": "chào cậu",
+      "nguoiDang": "johny44",
+      "ngayDang": "31/7/2022",
+      "luotXem": 0,
+      "anh": "https://images.unsplash.com/photo-1606830733744-0ad778449672?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mzl8fGNocmlzdG1hcyUyMHRyZWV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      "noiDung": "qưeqeqweqweqe",
+      "chuyenMuc": [
+        {
+          "id": "3",
+          "tenChuyenMuc": "Toughjoyfax",
+          "maChuyenMuc": "91-496-6933",
+          "ngayKhoiTao": "2021-11-23",
+          "chuyenMucCha": "",
+          "moTa": "33"
+        },
+        {
+          "id": "4",
+          "tenChuyenMuc": "Flowdesk",
+          "maChuyenMuc": "99-617-4168",
+          "ngayKhoiTao": "2021-12-23",
+          "chuyenMucCha": "Toughjoyfax",
+          "moTa": "123"
+        }
+      ]
+    }
+  ],
+  "category": [
+    {
+      "id": "1",
+      "tenChuyenMuc": "Sub-Ex",
+      "maChuyenMuc": "55-165-6071",
+      "ngayKhoiTao": "2021-10-23",
+      "chuyenMucCha": "Toughjoyfax",
+      "moTa": "1"
+    },
+    {
+      "id": "2",
+      "tenChuyenMuc": "Solarbreeze",
+      "maChuyenMuc": "68-154-9912",
+      "ngayKhoiTao": "2021-10-22",
+      "chuyenMucCha": "",
+      "moTa": "222"
+    },
+    {
+      "id": "3",
+      "tenChuyenMuc": "Toughjoyfax",
+      "maChuyenMuc": "91-496-6933",
+      "ngayKhoiTao": "2021-11-23",
+      "chuyenMucCha": "",
+      "moTa": "33"
+    },
+    {
+      "id": "4",
+      "tenChuyenMuc": "Flowdesk",
+      "maChuyenMuc": "99-617-4168",
+      "ngayKhoiTao": "2021-12-23",
+      "chuyenMucCha": "Toughjoyfax",
+      "moTa": "123"
+    },
+    {
+      "id": "5",
+      "tenChuyenMuc": "Home Ing",
+      "maChuyenMuc": "82-702-8538",
+      "ngayKhoiTao": "2022-10-23",
+      "chuyenMucCha": "",
+      "moTa": "2342"
+    },
+    {
+      "id": "6",
+      "tenChuyenMuc": "Fixflex",
+      "maChuyenMuc": "18-416-2977",
+      "ngayKhoiTao": "2022-10-26",
+      "chuyenMucCha": "Subin",
+      "moTa": "qưeeqwe"
+    },
+    {
+      "id": "7",
+      "tenChuyenMuc": "Subin",
+      "maChuyenMuc": "81-078-3570",
+      "ngayKhoiTao": "2021-10-27",
+      "chuyenMucCha": "Toughjoyfax",
+      "moTa": "qưeqwe"
+    },
+    {
+      "id": "8",
+      "tenChuyenMuc": "Bigtax",
+      "maChuyenMuc": "03-505-5579",
+      "ngayKhoiTao": "2021-10-28",
+      "chuyenMucCha": "Subin",
+      "moTa": "qưeqwe"
+    },
+    {
+      "id": "9",
+      "tenChuyenMuc": "Viva",
+      "maChuyenMuc": "01-959-2926",
+      "ngayKhoiTao": "2021-10-29",
+      "chuyenMucCha": "Subin",
+      "moTa": "ai mà biết được"
+    },
+    {
+      "id": "10",
+      "tenChuyenMuc": "Alphazap",
+      "maChuyenMuc": "78-497-0095",
+      "ngayKhoiTao": "2021-11-30",
+      "chuyenMucCha": "Toughjoyfax",
+      "moTa": " còn cái nịt"
+    }
+  ]
+}

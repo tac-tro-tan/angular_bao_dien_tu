@@ -1,0 +1,71 @@
+<div class="container">
+    <form action="" novalidate [formGroup]="form">
+
+        <nav class="navbar navbar-light bg-white">
+            <div class="container-fluid">
+                <a class="navbar-brand">
+                    <strong>Chi tiết chuyên mục</strong>
+                </a>
+                <div class="d-flex">
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal" (click)="DeleteCM(chuyenmucByID.id)">
+                        Xóa
+                    </button>
+
+
+                    <span style="margin:0 1rem"> </span>
+                    <button class="btn btn-outline-success" type="submit"
+                        routerLink="/category/change/{{chuyenmucByID.id}}">Chỉnh sửa</button>
+                </div>
+            </div>
+        </nav>
+
+        <fieldset disabled>
+
+            <div class="row">
+                <div class="box col">
+                    <label for="exampleFormControlInput1" class="form-label">Tên chuyên mục <span
+                            style="color:red">*</span></label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" formControlName="tenChuyenMuc"
+                        [(ngModel)]="chuyenmucByID.tenChuyenMuc">
+                    <span class="text-danger" *ngIf="(FormControl['tenChuyenMuc'].touched || submitted)
+                    && FormControl['tenChuyenMuc'].errors?.['required']">
+                        This field must required
+                    </span>
+                </div>
+                <div class="box col">
+                    <label for="exampleFormControlInput1" class="form-label">Mã chuyên mục <span
+                            style="color:red">*</span></label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" formControlName="maChuyenMuc"
+                        [(ngModel)]="chuyenmucByID.maChuyenMuc">
+                    <span class="text-danger" *ngIf="(FormControl['maChuyenMuc'].touched || submitted)
+                    && FormControl['maChuyenMuc'].errors?.['required']">
+                        This field must required
+                    </span>
+                </div>
+                <div class="box col">
+                    <label for="exampleFormControlInput1" class="form-label">Chuyên mục cha</label>
+                    <select class="form-select">
+                        <option hidden selected>{{chuyenmucByID.chuyenMucCha}}</option>
+                        <option *ngFor="let item of chuyenmuc">{{item.tenChuyenMuc}}</option>
+
+                    </select>
+                </div>
+            </div>
+            <div class="row box ">
+                <label for="exampleFormControlTextarea1" class="form-label">Mô tả</label>
+                <textarea class="form-control" rows="9" formControlName="moTa"
+                    [(ngModel)]="chuyenmucByID.moTa"></textarea>
+
+            </div>
+
+        </fieldset>
+
+
+    </form>
+
+
+
+</div>

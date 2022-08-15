@@ -1,0 +1,32 @@
+<div class="container" style="height: 100vh; width: 50vw;">
+    <form [formGroup]="accounterForm" (ngSubmit)="onSubmit()" >
+        <div class="d-flex justify-content-between m-3">
+            <h2>Thông tin tài khoản</h2>
+            <div class="d-flex justify-content-center">
+                <button type="submit" class="btn btn-success">Lưu</button>
+            </div>
+        </div>
+        <fieldset disabled>
+            <div class="form-outline m-3">
+                <label class="form-label" for="form3Example1cg">
+                    Userame <span style="color:red">*</span>
+                </label>
+                <input type="text" id="disabledTextInput" class="form-control" placeholder="{{accounter.username}}">
+            </div>
+        </fieldset>
+        <div class="form-outline m-3">
+            <label class="form-label" for="form3Example3cg">
+                Your Email <span style="color:red">*</span>
+            </label>
+            <input type="email" id="form3Example3cg" class="form-control" formControlName="email" value="{{accounter.email}}"/>
+            <span class="text-danger" *ngIf="(accounterFormControl['email']?.touched || submitted)
+                     && accounterFormControl['email'].errors?.['required']">
+                Email is required
+            </span>
+            <span class="text-danger" *ngIf="accounterFormControl['email']?.touched &&
+                     accounterFormControl['email'].errors?.['email']">
+                Enter a valid email address
+            </span>
+        </div>
+    </form>
+</div>

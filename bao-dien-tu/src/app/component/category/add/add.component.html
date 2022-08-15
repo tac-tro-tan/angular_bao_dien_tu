@@ -1,0 +1,52 @@
+<div class="container">
+    <form action="" [formGroup]="form" (ngSubmit)="createCM()">
+
+        <nav class="navbar navbar-light bg-white">
+            <div class="container-fluid">
+                <a class="navbar-brand">
+                    <strong>Thêm chuyên mục</strong>
+                </a>
+                <div class="d-flex">
+
+                    <button class="btn btn-outline-danger" type="submit" routerLink="/category">Hủy</button>
+                    <span style="margin:0 1rem"> </span>
+                    <button class="btn btn-outline-success" type="submit">Lưu</button>
+                </div>
+            </div>
+        </nav>
+
+        <div class="row">
+
+            <div class="box col">
+                <label for="exampleFormControlInput1" class="form-label">Tên chuyên mục <span
+                        style="color:red">*</span></label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" formControlName="tenChuyenMuc">
+                <span class="text-danger" *ngIf="(FormControl['tenChuyenMuc'].touched || submitted)
+              && FormControl['tenChuyenMuc'].errors?.['required']">
+                    This field must required
+                </span>
+            </div>
+            <div class="box col">
+                <label for="exampleFormControlInput1" class="form-label">Mã chuyên mục <span
+                        style="color:red">*</span></label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" formControlName="maChuyenMuc">
+                <span class="text-danger" *ngIf="(FormControl['maChuyenMuc'].touched || submitted)
+              && FormControl['maChuyenMuc'].errors?.['required']">
+                    This field must required
+                </span>
+            </div>
+            <div class="box col">
+                <label for="exampleFormControlInput1" class="form-label">Chuyên mục cha</label>
+                <select class="form-select" formControlName="chuyenMucCha">
+                    <option selected></option>
+                    <option *ngFor="let item of chuyenMucCha">{{item.tenChuyenMuc}}</option>
+
+                </select>
+            </div>
+        </div>
+        <div class="box row">
+            <label for="exampleFormControlTextarea1" class="form-label">Mô tả</label>
+            <textarea class="form-control" rows="9" formControlName="moTa"></textarea>
+        </div>
+    </form>
+</div>
